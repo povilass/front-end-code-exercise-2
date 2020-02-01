@@ -1,0 +1,89 @@
+.form-input {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 4.5rem;
+  max-width: none;
+  padding: 0;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  color: $color-text;
+  font-size: 1.5rem;
+
+  &.has-icon {
+    padding-right: 4.5rem;
+  }
+
+  &:focus {
+    border-bottom: 2px solid $color-primary;
+    margin-bottom: -1px;
+  }
+
+  &:focus ~ .field-container__label,
+  &:-webkit-autofill ~ .field-container__label {
+    font-size: 1.2rem;
+    top: 0;
+  }
+
+  &::placeholder {
+    color: $color-disabled;
+  }
+
+  &:required {
+    box-shadow: none;
+  }
+}
+
+.form-input__extra-value {
+  position: absolute;
+  top: 40%;
+}
+
+.form-input-icon {
+  position: absolute;
+  right: 10px;
+  bottom: 11px;
+  display: flex;
+  width: 2rem;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  color: $color-primary;
+
+  .button {
+    color: $color-primary
+  }
+
+  .icon {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    line-height: normal;
+  }
+
+  .icon-view-disabled {
+    font-size: 2rem;
+  }
+}
+
+.form-input__tooltip-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 3px;
+  right: 0;
+  height: 100%;
+  color: $color-disabled;
+  font-size: 19px;
+  z-index: $zindex-over;
+
+  .icon {
+    height: 19px;
+    line-height: normal;
+  }
+}

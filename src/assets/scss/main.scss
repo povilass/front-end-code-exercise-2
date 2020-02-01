@@ -1,0 +1,38 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+@import "base/base";
+@import "base/typography";
+@import "app/app";
+@import "form/form";
+@import "pages/main-page";
+@import "components/presentational/button";
+@import "components/presentational/buttons-group";
+@import "components/presentational/spinner";
+@import "components/form-elements/input";
+@import "components/form-elements/field-container";
+@import "components/modals/modal";
+@import "components/modals/simple-modal";
+
+.container {
+  padding-left: $grid-gutter-width / 2;
+  padding-right: $grid-gutter-width / 2;
+  margin-left: auto;
+  margin-right: auto;
+  width: $container-xl;
+
+  @include respond(phone) {
+    width: $container-sm;
+  }
+
+  @include respond(tab-port) {
+    width: $container-md;
+  }
+
+  @include respond(tab-land) {
+    width: $container-lg;
+  }
+
+  @include respond(big-desktop) {
+    width: $container-xl;
+  }
+}

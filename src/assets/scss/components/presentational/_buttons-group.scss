@@ -1,0 +1,18 @@
+.buttons-group {
+  display: flex;
+  align-items: center;
+
+  button,
+  a {
+    flex-grow: 1;
+  }
+
+  &.is-centered {
+    justify-content: center;
+
+    button,
+    a {
+      flex-grow: 0;
+    }
+  }
+}

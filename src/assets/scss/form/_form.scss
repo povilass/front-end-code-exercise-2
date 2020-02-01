@@ -1,0 +1,44 @@
+.form {
+  padding-top: 2rem;
+
+  &.no-padding {
+    padding-top: 0;
+  }
+
+  .field-container {
+    margin-bottom: 12px;
+  }
+
+  .input-select-wrap,
+  .input-group-wrap {
+    margin-bottom: 12px;
+
+    .field-container {
+      margin-bottom: 0;
+    }
+  }
+
+  .radio-group {
+    margin: 3rem 0;
+  }
+
+  .currency {
+    margin-left: 3px;
+    text-transform: uppercase;
+  }
+
+  .form-buttons {
+    padding-top: 1.2rem;
+  }
+}
+
+.form-content {
+  margin: 2rem auto 4rem;
+  width: 36rem;
+}
+
+.form-title {
+  font-size: 2rem;
+  text-align: center;
+  color: $color-grey-dark-3;
+}

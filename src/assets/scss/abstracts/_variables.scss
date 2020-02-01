@@ -1,0 +1,46 @@
+
+//colors
+$color-primary: #0054A4;
+$color-primary-light: lighten(#0054A4, 10%);
+$color-primary-dark: darken(#0054A4, 20%);
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000;
+$color-text: #333;
+$color-text-light: #5d6d7e;
+$color-disabled: #99a4ae;
+$color-disabled-text: #aeb5bf;
+$color-error: #ce181e;;
+
+
+$border-error: 2px solid $color-error;
+$border: thin solid $color-grey-dark-2;
+$border-primary-select: 2px solid $color-primary;
+
+// FONT
+$default-font-size : 1.6rem;
+
+
+$grid-gutter-width: 3rem;
+
+$screen-sm: 37.5em;
+$screen-md: 56.25em;
+$screen-lg: 75em;
+$screen-xl: 112.5em;
+
+$container-sm: (27.5rem - $grid-gutter-width);
+$container-md: (46.25rem - $grid-gutter-width);
+$container-lg: (65rem - $grid-gutter-width);
+$container-xl: (102.5rem - $grid-gutter-width);
+
+$zindex-over: 2;

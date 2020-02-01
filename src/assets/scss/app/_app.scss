@@ -1,0 +1,43 @@
+#app {
+  height: 100%;
+}
+
+#app,
+.app-container {
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+.app {
+  flex: 1 0 auto;
+}
+
+.page-content {
+  padding-top: 6rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  transition: padding 0.2s ease-in-out;
+
+  @include respond(phone) {
+    padding-top: 0;
+    margin-top: 2rem;
+  }
+
+  @include respond(tab-port) {
+    padding-top: 2rem;
+    margin-top: 2rem;
+  }
+
+  @include respond(tab-land) {
+    padding-top: 2rem;
+    margin-top: 2rem;
+  }
+}
